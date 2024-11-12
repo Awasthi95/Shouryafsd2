@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 3 layout</title> 
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        width:1200px;
+        height:auto;
+        background-color: #999;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-rows:1200px 600px 80px ;
+        gap: 10px;
+    }
+    #logo ,#section,footer{
+        background-color: rgb(253, 127, 255);
+    }
+    #section{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+
+
+    }
+    #left,#right{
+        background-color: aquamarine;
+    }
+    #right{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        gap: 10px;
+
+    }
+
+    #r_top ,#r_btm{
+        background-color: bisque;
+}
+</style>
+ </head>
+ <body>
+    <main>
+        <div id ="logo">  <h2>LOGO </h2></div>
+        <div id ='section'> 
+            <div id ="left">  side bar </div>
+                <div id="right"> 
+                    <div id="r_top"> <h2> Header/Banner</h2></div>
+                    <div id="r_btm"><h2>  Body Area</h2></div>
+                    </div> 
+                    </div>
+    
+        <footer> <h2> Footer</h2></footer>
+</main>
+
+</body>
+</html>
